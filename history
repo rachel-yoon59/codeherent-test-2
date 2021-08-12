@@ -1,0 +1,7 @@
+# Terraform v0.11.13
+terraform init -verify-plugins=false
+terraform plan
+terraform apply
+chmod 400 aws-key.pem
+ssh -i aws-key.pem ubuntu@xxx.xxx.xxx.xxx
+terraform destroy
