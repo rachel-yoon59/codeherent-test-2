@@ -8,9 +8,8 @@ resource "aws_route_table" "test-route-table" {
     Name = "test-route-table"
   }
 }
- 
+
 resource "aws_route_table_association" "my-subnet-association" {
   subnet_id      = "${aws_subnet.test-subnet-a.id}"
   route_table_id = "${aws_route_table.test-route-table.id}"
 }
-
