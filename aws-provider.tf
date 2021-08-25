@@ -25,7 +25,7 @@ resource "aws_ami_from_instance" "ami_from_instance2" {
 
 resource "aws_default_vpc" "default_vpc" {}
 
-module "vpc1" {
+module "vpc12" {
   source = "terraform-aws-modules/vpc/aws"
   version = "3.6.0"
     # Should be true to enable ClassicLink for the VPC. Only valid in regions and accounts that support EC2 Classic.
